@@ -19,8 +19,12 @@
 
 
 $app->get('/', function ($request, $response, $args) {
+    // $id =1;
+    // $this->db->prepare("SELECT * FROM pessoa WHERE id = :id");
+    // $this->db->bindValue(':id',$id);
+
     // Sample log message
-    $this->logger->info("Slim-Skeleton '/' route");
+    // $this->logger->info("Slim-Skeleton '/' route");
 
     // Render index view
     return $this->renderer->render($response, 'index.phtml', $args);
